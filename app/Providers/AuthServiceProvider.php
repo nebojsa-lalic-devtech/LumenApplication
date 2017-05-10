@@ -32,8 +32,8 @@ class AuthServiceProvider extends ServiceProvider
 
         $this->app['auth']->viaRequest('api', function ($request) {
             $header = $request->header('Api-Token');
-            if ($header && $header == 'ozbiljnoDobraSifra') {
-                return 'Authenticated!!!';
+            if ($header && $header == 'devtech') {
+                return new User();
             }
 
             return null;

@@ -25,6 +25,6 @@ $app->group(['prefix' => '/employee'], function () use ($app) {
     $app->post('/', 'EmployeeController@saveEmployee');
     $app->put('/{id}', 'EmployeeController@updateEmployee');
     $app->delete('/{id}', 'EmployeeController@deleteEmployee');
-   // $app->get('/', ['middleware' => 'auth', 'EmployeeController@helloFromController']);
+    $app->get('/auth', ['middleware' => 'auth', 'uses' => 'EmployeeController@helloFromController']);
 
 });

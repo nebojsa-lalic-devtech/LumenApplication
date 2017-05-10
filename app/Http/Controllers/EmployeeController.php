@@ -9,15 +9,14 @@ use Illuminate\Support\Facades\Log;
 class EmployeeController extends Controller
 {
     /**
-     * Create a new controller instance.
-     *
-     * @return void
+     * EmployeeController constructor.
      */
     public function __construct()
     {
-        $this->middleware('auth', ['only' => [
-            'helloFromController'
-        ]]);
+        $this->middleware('auth');
+//        $this->middleware('auth', ['only' => [
+//            'helloFromController'
+//        ]]);
     }
 
     //test method >>>
