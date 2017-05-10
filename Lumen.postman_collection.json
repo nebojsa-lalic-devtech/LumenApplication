@@ -1,0 +1,97 @@
+{
+	"variables": [],
+	"info": {
+		"name": "Lumen",
+		"_postman_id": "44efa79d-8dd5-20cb-35fc-d6b74d4da409",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET - EmployeeController",
+			"request": {
+				"url": "http://homestead.app/employee",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "CREATE - Employee",
+			"request": {
+				"url": "http://homestead.app/employee",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Api-Token",
+						"value": "ozbiljnoDobraSifra",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Test\",\n  \"last_name\": \"User\",\n  \"email\": \"testuser@gmail.com\",\n  \"job\": \"manager\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "UPDATE - Employee",
+			"request": {
+				"url": "http://homestead.app/employee/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Api-Token",
+						"value": "ozbiljnoDobraSifra",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Test\",\n  \"last_name\": \"User\",\n  \"email\": \"testuser@gmail.com\",\n  \"job\": \"manager\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE - Employee",
+			"request": {
+				"url": "http://homestead.app/employee/6",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Api-Token",
+						"value": "ozbiljnoDobraSifra",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"first_name\": \"Test\",\n  \"last_name\": \"User\",\n  \"email\": \"testuser@gmail.com\",\n  \"job\": \"manager\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
